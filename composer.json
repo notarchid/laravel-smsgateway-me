@@ -1,0 +1,35 @@
+{
+    "name": "notarchid/laravel-smsgateway-me",
+    "description": "SMSGateway.Me for Laravel",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "sms", "gateway", "smsgateway"],
+    "authors": [
+        {
+            "name": "Rizki Dwi",
+            "email": "egoistic.archid@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.x|5.2.x|5.3.x|5.4.x|5.5.x",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotArchid\\SmsGateway\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NotArchid\\SmsGateway\\ServiceProvider"
+            ],
+            "aliases": {
+                "SmsGateway": "NotArchid\\SmsGateway\\Facade"
+            }
+        }
+    }
+}
